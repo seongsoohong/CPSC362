@@ -13,7 +13,14 @@ from pynput.keyboard import Key, Controller
 import time
 
 def search_file(path, target):
-    print("begin search within")
+    print(path)
+
+    if '.txt' in path:
+        with open(path) as f:
+            if target in f.read():
+                return True
+            else: return False
+
     if '.docx' in path and '~$mpleword' not in path:
        doc = Document(path)
        print("2")
@@ -24,6 +31,7 @@ def search_file(path, target):
                         print("found")
                         return True
     if '.pptx' in path:
+        print("opening pptx")
         prs = Presentation(path)
         text_runs = []
         for slides in prs.slides:
@@ -36,6 +44,21 @@ def search_file(path, target):
                         if target in run.text:
                             if run.text == target:
                                 return True
+    if '.xlsx' in path:
+        print("opening xlsx")
+        wb = load_workbook(path)
+        for ws in wb.worksheets:
+            for row in ws.iter_rows():
+                for cell in row:
+                    if cell.value == None:
+                        continue
+                    if type(cell.value) != str :
+                        temp = str(cell.value)
+                        if target in temp:
+                            return True
+                        continue
+                    if target in cell.value:
+                        return True
     print("returning False")
     return False
 

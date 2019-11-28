@@ -75,7 +75,7 @@ def getFileResult(self, userInput):
     if not entries:
         dirs = [d for d in os.listdir(dirpath) if os.path.isdir(os.path.join(dirpath, d))]
         for file in dirs:
-            print(file)
+            #print(file)
             if (file == 'sample'):
                 fetchPath(dirpath + '/' + file, userInput)
 
