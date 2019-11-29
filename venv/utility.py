@@ -58,6 +58,12 @@ def fetchPath(path, userInput):
             if str(file).endswith("pdf"):
                 file_type = "pdf"
                 icon = "pdf.png"
+            if str(file).endswith("pptx"):
+                file_type = "pptx"
+                icon = "txt.png"
+            if str(file).endswith("xlsx"):
+                file_type = "xlsx"
+                icon = "excel.png"
             if str(file).endswith("png") or str(file).endswith("jpg"):
                 file_type = "jpg/png"
                 icon = "image.png"

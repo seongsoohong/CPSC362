@@ -11,6 +11,7 @@ from openpyxl.styles import PatternFill, Border, Side, Alignment, Protection, Fo
 import os
 from pynput.keyboard import Key, Controller
 import time
+import PyPDF2
 
 def search_file(path, target):
     print(path)
@@ -30,8 +31,25 @@ def search_file(path, target):
                    if target in run.text:
                         print("found")
                         return True
+    if ".pdf" in path:
+        if target == "":
+            return True
+        pdfFile = open(path, 'rb')
+        pdfReader = PyPDF2.PdfFileReader(pdfFile)
+
+        for index in range(pdfReader.numPages):
+            pageObj = pdfReader.getPage(index)
+            print(pageObj.extractText())
+            if target in pageObj.extractText():
+                print("fileEX")
+                return True
+        pdfFile.close()
+        return False
+
     if '.pptx' in path:
         print("opening pptx")
+        if target == "":
+            return True
         prs = Presentation(path)
         text_runs = []
         for slides in prs.slides:

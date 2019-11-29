@@ -29,13 +29,17 @@ class MyForm(QDialog):
             indexNumber = self.entries[self.ui.listWidget.currentRow()].path
 
             run(self, indexNumber)
+            #keyboard.press(Key.enter)
+            #keyboard.release(Key.enter)
             time.sleep(5)
             keyboard = Controller()
             keyboard.press(Key.ctrl)
             keyboard.press('f')
             keyboard.release(Key.ctrl)
             keyboard.release('f')
-      
+            keyboard.press(Key.enter)
+            keyboard.release(Key.enter)
+
 
             keyboard.type( self.ui.lineEdit.text())
             # run(self, self.ui.listWidget.currentItem().text())
