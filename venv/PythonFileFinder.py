@@ -37,11 +37,12 @@ class MyForm(QDialog):
             keyboard.press('f')
             keyboard.release(Key.ctrl)
             keyboard.release('f')
-            keyboard.press(Key.enter)
-            keyboard.release(Key.enter)
+
 
 
             keyboard.type( self.ui.lineEdit.text())
+            keyboard.press(Key.enter)
+            keyboard.release(Key.enter)
             # run(self, self.ui.listWidget.currentItem().text())
         else:
             showMessage(self, msg = "There is nothng to run!!!")

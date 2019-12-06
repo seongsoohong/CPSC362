@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="67ec5b38-19fa-4906-b238-6454cb1bce1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/pptsamp.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/sample/pptsamp.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/sampletext.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample/sampletext.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/argparse-1.4.0.dist-info/DESCRIPTION.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/argparse-1.4.0.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/argparse-1.4.0.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/argparse-1.4.0.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/argparse-1.4.0.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/argparse-1.4.0.dist-info/metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/argparse-1.4.0.dist-info/top_level.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/PythonFileFinder.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/PythonFileFinder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/highlight.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/highlight.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/utility.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +96,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/venv/PythonFileFinder.py</url>
-          <line>71</line>
+          <line>72</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
